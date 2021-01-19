@@ -2,13 +2,17 @@ package witch.matrix;
 
 import java.util.ArrayList;
 
-public class gauss_method extends equation
+class gauss_method extends equation
 {
     @Override
-    void solve()
+    boolean solve()
     {
         double max;
         ArrayList<Double> curX = new ArrayList<>(n);
+        for (int i = 0; i < n; i++)
+        {
+            curX.add(0.0);
+        }
         int k = 0; int index;
 
         while (k < n)
@@ -27,7 +31,7 @@ public class gauss_method extends equation
             if (max < eps)
             {
                 System.out.printf("Решение получить невозможно из-за нулевого %d-того столбца матрицы A.\n", index);
-                return;
+                return false;
             }
             ArrayList<Double> tempAr = A.get(k);
             A.set(k, A.get(index));
@@ -70,5 +74,6 @@ public class gauss_method extends equation
 
         counter = 1;
         x = curX;
+        return true;
     }
 }

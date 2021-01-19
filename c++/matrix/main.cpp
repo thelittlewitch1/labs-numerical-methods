@@ -106,7 +106,7 @@ bool isDiagContZero (vector<vector<double>> A, double eps)
     bool flag = true;
     for (unsigned long long i = 0; i < A.size(); ++i)
     {
-        if (A[i][i] < eps)
+        if (abs(A[i][i] < eps))
             flag = false;
     }
     return flag;
@@ -339,11 +339,11 @@ int main()
         cout << " |";
 
         if (i == 0) {cout << " * ";}
-        else {cout << "   ";}
+            else {cout << "   ";}
 
         cout << "| " << x[i] << " |";
 
-            if (i == 0) {cout << " = ";}
+        if (i == 0) {cout << " = ";}
             else {cout << "   ";}
 
         double c = 0;
