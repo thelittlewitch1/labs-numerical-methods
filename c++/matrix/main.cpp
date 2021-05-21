@@ -106,7 +106,7 @@ bool isDiagContZero (vector<vector<double>> A, double eps)
     bool flag = true;
     for (unsigned long long i = 0; i < A.size(); ++i)
     {
-        if (abs(A[i][i] < eps))
+        if (abs(A[i][i]) < eps)
             flag = false;
     }
     return flag;

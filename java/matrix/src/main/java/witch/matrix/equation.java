@@ -55,13 +55,13 @@ abstract class equation
         {
             System.out.print("| ");
             for (int j = 0; j < n; j++)
-                {System.out.printf("%4f ", A.get(i).get(j));}
+                {System.out.printf("%5.3f ", A.get(i).get(j));}
             System.out.print(" |");
 
             if (i == 0 ) {System.out.print(" * ");}
                     else {System.out.print("   ");}
 
-            System.out.printf ("| %4f |", x.get(i));
+            System.out.printf ("| %5.3f |", x.get(i));
 
             if (i == 0 ) {System.out.print(" = ");}
                     else {System.out.print("   ");}
@@ -71,11 +71,11 @@ abstract class equation
             {
                 c = c + A.get(i).get(j)*x.get(j);
             }
-            System.out.printf ("| %4f |", c);
+            System.out.printf ("| %5.3f |", c);
 
             if (i == 0 ) {System.out.print(" ~= ");}
             else {System.out.print("    ");}
-            System.out.printf ("| %4f |\n", b.get(i));
+            System.out.printf ("| %5.3f |\n", b.get(i));
         }
         System.out.print("\n\n");
     }
