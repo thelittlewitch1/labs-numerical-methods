@@ -62,7 +62,7 @@ https://en.wikipedia.org/wiki/Power_iteration
   
     /scilab/Eigenvalue
   
-4. Solving a partial differential equation
+4. Solving systems of ordinary differential equations
  
     A. Forward euler method:
       https://en.wikipedia.org/wiki/Euler_method
@@ -84,5 +84,18 @@ https://en.wikipedia.org/wiki/Power_iteration
     
       /python/SoDE.py, function shikhman_method
       
-
+5. Solving a partial differential equation (will be added)
+     
+    A. Forward euler method:
+      description
     
+      relise in: 
+    
+      path
+    
+    B. Implicit euler method:
+      description 
+    
+      relise in: 
+    
+      path
