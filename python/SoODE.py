@@ -7,7 +7,7 @@ class SourceData:
     omega = 25
     a = 2.5 + omega / 40
     u0 = np.array([[0], [-0.412]])
-    T = 0.5
+    T = 0.2
     epsAdd = [10 ** -3, 10 ** -5]
     tayMax = 1
     tayMin = 0.1
